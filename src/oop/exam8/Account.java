@@ -1,6 +1,6 @@
 package oop.exam8;
 
-public class Account {
+public class Account {    
 	static int money1;
 	int money2;
 	
