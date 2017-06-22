@@ -11,33 +11,28 @@ public class EnumWeekExample {
 		
 		
 		switch(week) {
-			case 1:
-				today = Week.SUNDAY; break;
-			case 2:
-				today = Week.MONDAY; break;
-				
-			case 3:
-				today = Week.TUESDAY; break;
-				
-			case 4:
-				today = Week.WEDNESDAY; break;
-				
-			case 5:
-				today = Week.THURSDAY; break;
-				
-			case 6:
-				today = Week.FRIDAY; break;
-				
-			case 7:
-				today = Week.SATURDAY; break;
+			case 1:	today = Week.SUNDAY; break;
+			case 2:	today = Week.MONDAY; break;
+			case 3:	today = Week.TUESDAY; break;
+			case 4:	today = Week.WEDNESDAY; break;
+			case 5:	today = Week.THURSDAY; break;
+			case 6:	today = Week.FRIDAY; break;
+			case 7:	today = Week.SATURDAY; break;
 		}
-		
-		System.out.println("오늘 요일 : " + today);
+		System.out.println(week);
+		System.out.println("오늘 요일 : " + today.name());
+		System.out.println(today.ordinal());
+		System.out.println(today.compareTo(Week.FRIDAY));
+		System.out.println(today.compareTo(Week.WEDNESDAY));
 		
 		if(today == Week.SUNDAY) {
 			System.out.println("일요일에는 축구를 합니다.");
 		} else {
 			System.out.println("열심히 자바 공부합니다.");
+		}
+		Week[] weeks = Week.values();
+		for(Week w : weeks) { 
+			System.out.println(w);
 		}
 	}
 }
