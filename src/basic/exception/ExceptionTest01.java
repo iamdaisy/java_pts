@@ -8,7 +8,8 @@ public class ExceptionTest01 {
 			System.out.println(str.toString());
 			
 		} catch (NullPointerException | NumberFormatException e) {         // 서브 캐치를 위쪽으로.
-			System.out.println("인스턴스 할당이 안됐음");
+			System.out.println("인스턴스 할당이 안됐음 "  + e.getMessage());
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
