@@ -7,9 +7,12 @@ public class ArithmaticTest {
 		Scanner sc = new Scanner(System.in);
 		int a;
 		int b;
+	
 		
 		System.out.print("a : "); a = sc.nextInt();
 		System.out.print("b : "); b = sc.nextInt();
+	
+		
 		
 		System.out.println(a + "+" + b + "=" + (a + b));
     	System.out.println(a + "-" + b + "=" + (a - b));
